@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+    <title>Virus Shield</title>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}""></script>
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename="images/favicon.ico")}}">
+    </head>
+
+    <h1>Virus Shield</h1>
+
+    
+    <img src="{{url_for('static', filename="images/virusshield_logo.png")}}" alt="Virus Shield Logo"
+    style="width:130px;height:100px;" class="center">
+    <h3>What is Virus Shield?</h3>
+    <p>Welcome to Virus Shield! Please upload a file that you would like to test for any discovery of malware.</p>
+    
+
+    <h2>Upload New File</h2>
+
+    <form method=post enctype=multipart/form-data>
+        <!-- <label for="Image">Upload File:</label><br> -->
+        <input type=file id="File" name=file>
+        <input type=submit value=Upload>
+    </form>
+
+    <h2>Results</h2>
+
+    <body>
+        <button type="button" onclick="revealMessage()" class="center">
+            Click here to reveal results!
+        </button>
+        <p id="hiddenResults" style="display:none">{{ my_string }}</p>
+    </body>
+
+</html>

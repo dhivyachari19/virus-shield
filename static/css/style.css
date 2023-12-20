@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+    font-family: Optima, sans-serif;
+}
+
+form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.content-wrapper {
+    padding: 10px 30px;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.highlight {
+    font-weight: 700;
+    color: rgb(232, 214, 51);
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+ul li {
+    list-style-type: square;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    width: 50%;
+}
