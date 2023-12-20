@@ -1,4 +1,4 @@
-# group-project-readme
+# virus-shield-readme
 
 
 VirusShield allows you to upload a file (of a specified type) to be detected for malware. VirusShield uses a CNN and SVM model to accomplish this.
